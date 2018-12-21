@@ -1,0 +1,21 @@
+<button class="myButton" (click)="toggleStyles()"> Toggle Styles</button>
+
+<h1 [class.gray]="h1Style" >Toggle Css</h1>
+
+<p [ngClass]="{
+    'red': pStyle,
+    'large': !pStyle
+  }">
+      This is a paragraph
+</p>
+
+<h2 [style.color]="h1Style ? gray : blacks">
+  Inline Style
+</h2>
+
+<p [ngStyle]="{
+  'color': h1Style ? 'gray' : 'black',
+  'font-size': !h1Style ? '1em' : '4em'
+}">
+  Inline Para
+</p>
