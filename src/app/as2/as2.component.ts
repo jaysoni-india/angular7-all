@@ -14,7 +14,7 @@ export class As2Component{
 
   constructor(){
 
-    this.showPara = confirm('Show Para');
+    // this.showPara = confirm('Show Para');
   }
 
   ngInit(){
