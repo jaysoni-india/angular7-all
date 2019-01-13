@@ -1,0 +1,7 @@
+<button class="btn btn-lg btn-secondary" [disabled]="MyButton">My Button</button>
+
+<br>
+<div class="btn-grp">
+  <button class="btn btn-sm btn-primary" [disabled] = "EnableButton" (click)="toggleMyButton()">Enable</button>
+  <button class="btn btn-sm btn-warning" [disabled]="DisableButton" (click)="toggleMyButton()">Disable</button>
+</div>

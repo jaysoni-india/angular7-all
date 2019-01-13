@@ -1,0 +1,17 @@
+<input class="form-control" type="text"
+[(ngModel)]="inputString">
+<br><p class="text-muted">{{ inputString }}</p>
+<button class="btn btn-primary" (click)="this.inputString=''" [disabled]="this.inputString.length ==  0 ? true : false">Reset Input</button>
+
+<p *ngIf="showPara; else jayhook">Yes </p>
+
+<ng-template #jayhook>
+  <p>No</p>
+</ng-template>
+
+<br>
+
+<div class="text-center">
+  <p [ngStyle]="{color:'red'}">Welcome , </p>
+  <p [ngClass]="{'text-white': true, 'text-primary':false}">jay</p>
+</div>
