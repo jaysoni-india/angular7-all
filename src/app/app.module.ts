@@ -1,3 +1,4 @@
+import { BindingComponent } from './binding/binding.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
@@ -14,7 +15,8 @@ import { As2Component } from './as2/as2.component';
     AppComponent,
     TestComponent,
     BottonsComponent,
-    As2Component
+    As2Component,
+    BindingComponent
   ],
   imports: [
     BrowserModule,
